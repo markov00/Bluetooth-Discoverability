@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">BT-Active</string>
+<string name="bluetooth_is_discoverable">Bluetooth is always discoverable</string>
+<string name="bluetooth_not_discoverable">Bluetooth not discoverable</string>
+<string name="bluetooth_visibility">Bluetooth always discoverable</string>
+<string name="bt_starting">Bluetooth is turning on</string>
+<string name="bt_stopping">Bluetooth is turning off</string>
+<string name="bt_error">Bluetooth Error</string>
+</resources>
