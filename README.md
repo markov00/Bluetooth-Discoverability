@@ -12,24 +12,22 @@ Using reflection the app will use methods *setDiscoverableTimeout* and *setScanM
 Get started
 -------------------------------------------------------------
 
-1. Get the source
+* Get the source
 
-    git clone git://github.com/markov00/Bluetooth-Discoverability.git
-    
+```git clone git://github.com/markov00/Bluetooth-Discoverability.git```
 
-1. Compile and create an *signed* apk with your preferred IDE
+* Compile and create an *signed* apk with your preferred IDE
+* Mount the /system/app folder with write permission
 
-1. Mount the /system/app folder with write permission
+```mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system```
 
-    mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
+* Push the apk on your sdcard
 
-1. Push the apk on your sdcard
+```adb push BTActive.apk /sdcard/```
 
-    adb push BTActive.apk /sdcard/
+* Move the apk inside /system/app folder on your rooted phone.
 
-1. Move the apk inside /system/app folder on your rooted phone.
-
-    cat /sdcard/BTActive.apk > /system/app/BTActive.apk
+```cat /sdcard/BTActive.apk > /system/app/BTActive.apk```
 
 
 Tested on
