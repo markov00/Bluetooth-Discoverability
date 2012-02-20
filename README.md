@@ -2,7 +2,7 @@ Bluetooth Always Discoverable
 =============================================================
 
 This app will provide a support for leave the bluetooth discoverability of Android phones prior to 2.3.3.
-This application works only in rooted phones.
+This application works only in *rooted* phones.
 You also need the permission to write the /system/app folder
 
 
