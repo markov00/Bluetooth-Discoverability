@@ -17,18 +17,23 @@ Get started
     git clone git://github.com/markov00/Bluetooth-Discoverability.git
     
 
-1. Compile and create an apk with your preferred IDE
+1. Compile and create an *signed* apk with your preferred IDE
 
-
-1. Push the apk inside /system/app folder on your rooted phone. 
-
-
-If you need to mount the file system in write mode you can use command
+1. Mount the /system/app folder with write permission
 
     mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
+
+1. Push the apk on your sdcard
+
+    adb push BTActive.apk /sdcard/
+
+1. Move the apk inside /system/app folder on your rooted phone.
+
+    cat /sdcard/BTActive.apk > /system/app/BTActive.apk
 
 
 Tested on
 -------------------------------------------------------------
-This app was tested on a rooted LG P500 2.2 android phone.
+Rooted LG P500 with Android 2.2
+Rooted Nexus S with Android 2.3.6 (it has also by default the always discoverability option but I try it only for test purposes)
 
