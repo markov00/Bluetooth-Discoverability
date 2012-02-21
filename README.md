@@ -14,20 +14,23 @@ Get started
 
 * Get the source
 
-```git clone git://github.com/markov00/Bluetooth-Discoverability.git```
+		git clone git://github.com/markov00/Bluetooth-Discoverability.git
 
 * Compile and create an *signed* apk with your preferred IDE
-* Mount the /system/app folder with write permission
-
-```mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system```
 
 * Push the apk on your sdcard
 
-```adb push BTActive.apk /sdcard/```
+		adb push BTActive.apk /sdcard/
+		
+* Mount the /system/app folder with write permission
+
+		adb shell
+		$ su
+		# mount -o remount,rw -t yaffs2 /dev/block/mtdblock3 /system
 
 * Move the apk inside /system/app folder on your rooted phone.
 
-```cat /sdcard/BTActive.apk > /system/app/BTActive.apk```
+		# cat /sdcard/BTActive.apk > /system/app/BTActive.apk
 
 
 Tested on
